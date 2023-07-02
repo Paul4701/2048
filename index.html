@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME 2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startingPoint()">
+
+    <div class="header">
+        <div class="poster">
+            <h1 id="h1">2048 GAME</h1> <br>
+            <a href="#rule"> <strong>How to Play → </strong> </a>
+        </div>
+
+        <div> 
+            <div id="scoreCard">
+                <strong>Best</strong> <br>
+                <span id="pscore">0</span>
+            </div>
+            <div id="scoreCard">
+                <strong>Score</strong> <br>
+                <span id="score">0</span>
+            </div> 
+            <button type="reset" onclick="startingPoint()">New Game</button>
+        </div>
+    </div>
+
+    <section id="section" class="sectionc">
+        
+    </section>
+
+    <div id="rule">
+        <p>
+            <strong>HOW TO PLAY : </strong> Use your <b>arrow keys</b> to move the tiles.
+        Tiles with the same number merge into one when they touch.
+        Add them up to reach <b>2048</b>!
+        </p>
+        <a href="#h1"><strong>Start playing →</strong></a>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <h1>GAME OVER</h1>
+            Your Score : <span id="mscore">0</span>
+        <h2>Try Again !!</h2>
+        <button onclick="resume()">PLAY</button>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/Sa-tya/Game_2048">Github</a>
+        <p>Created by - <strong>Delta Team of DEVNEST</strong></p>
+    </footer>
+    <script src="./script1.js"></script>
+</body>
+</html>
